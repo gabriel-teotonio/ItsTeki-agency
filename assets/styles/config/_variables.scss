@@ -1,0 +1,20 @@
+
+
+:root{
+    --bg-color:rgba(11, 17, 48, 1);
+    --bg-gradiente:  linear-gradient(269.28deg, #0C2992 8.64%, #0C2992 8.65%, rgba(12, 41, 146, 0) 122.41%) ;
+    --color-primary: #0d6efd;
+}
+
+@mixin logo-gradient {
+    background: linear-gradient(266.21deg, #166ACC 4.17%, rgba(203, 211, 255, 0) 138.87%);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+}
+
+.title-section{
+    font-weight: 700;
+    font-size: 3rem;
+}

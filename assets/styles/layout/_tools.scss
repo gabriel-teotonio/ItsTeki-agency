@@ -1,0 +1,29 @@
+@import '../config/variables';
+
+.tools{
+    text-align: center;
+    width: 100%;
+    padding: 2rem 0;
+    background: var(--bg-gradiente);
+    margin: 2rem 0;
+    .tools-itens{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        margin-top: 2rem;
+        img{
+            width: 6rem;
+        }
+    }
+}
+
+@media(max-width:560px){
+    .tools{
+        .tools-itens{
+            flex-direction: column;
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+    }
+}

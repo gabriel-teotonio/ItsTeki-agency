@@ -1,0 +1,40 @@
+
+@import '../config/variables';
+
+.about{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 2rem;
+    text-align: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    background: var(--bg-gradiente);
+    p{
+        text-align: left;
+        margin: 0;
+    }
+    .about-link{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        &:hover{
+            i{
+                transition: .3s ease;
+                color:var(--color-primary);
+                transform: translateX(4px);
+            }
+        }
+    }
+}
+
+@media(max-width:650px){
+    .about{
+        grid-template-columns: 1fr;
+        .about-link{
+            margin-left: auto;
+        }
+    }
+}

@@ -1,0 +1,99 @@
+
+.clients{
+    padding: 2rem 0;
+    text-align: center;
+    .clients-cards{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin: 6rem 0;
+        .clients-card{
+            position: relative;
+            height: 340px;
+            max-width: 320px;
+            // background-color: rgba(35, 49, 199, 0.221);
+            background: rgba(26, 26, 164, 0.146);
+            backdrop-filter: blur(1rem);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: .5rem;
+            // box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.16);
+            padding: 0 .5rem;
+            .client-profile{
+                position: absolute;
+                top: -2rem;
+                left: 50%;
+                transform: translate(-50%);
+            
+                .client-ocuppation{
+                    font-size: small;
+                    font-style: italic;
+                }
+            }
+            .client-comment{
+                margin-top: 7rem;
+                color: lightgray;
+            }
+        }
+    }
+    button{
+        width: 20rem;
+        max-width: 20rem;
+    }
+}
+
+
+// carousel
+
+.carousel{
+    display: none;
+    text-align: center;
+    .carousel-item{
+        padding: 4rem 0;
+        .clients-card{
+            margin: 0 auto;
+        }
+    }
+}
+
+.clients-card{
+    position: relative;
+    height: 340px;
+    max-width: 320px;
+    display: flex;
+    background: rgba(26, 26, 164, 0.146);
+    backdrop-filter: blur(1rem);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: .5rem;
+    padding: 0 .5rem;
+    .client-profile{
+        position: absolute;
+        top: -2rem;
+        left: 50%;
+        transform: translate(-50%);
+    
+        .client-ocuppation{
+            font-size: small;
+            font-style: italic;
+        }
+    }
+    .client-comment{
+        margin-top: 7rem;
+        color: lightgray;
+    }
+}
+
+
+@media (max-width:1050px){
+    .clients{
+        display: none;
+    }
+    .carousel{
+        display: block;
+    }
+    
+}

@@ -1,0 +1,38 @@
+
+.service{
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 4rem;
+    .service-itens{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        .service-item{
+            height: 20rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+            align-items: center;
+            h4{
+                margin-top: 2rem;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@media (max-width:765px){
+    .service{
+        margin: 4rem 0;
+    }
+    .service-itens{
+        flex-direction: column;
+    }   
+}

@@ -1,0 +1,65 @@
+@import '../config/variables';
+
+
+.contact{
+    display: flex;
+    padding: 4rem 0;
+    background: var(--bg-gradiente);
+   .contact-form{
+    padding: 2rem;
+    width: 50%;
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        
+        textarea{
+            resize: none;
+            height: 140px;
+        }
+        .form-control{
+            background-color: rgba(11, 17, 48, 1);
+            border: none;
+            color: white;
+            font-weight: 600;
+        }
+    }
+    button{
+        max-width: 20rem;
+        margin-top: 2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+   }
+   .contact-othes{
+    padding: 2rem;
+    width: 50%;
+    text-align: center;
+    p{
+        color: lightgray;
+    }
+    .contact-icons-social{
+        margin: 2rem 0;
+        i{
+            transition: .3s ease;
+            font-size: 4rem;
+            margin: 0 .5rem;
+            &:hover{
+                transform: translateY(-4px);
+            }
+        }
+    }
+   }
+}
+
+@media(max-width:560px){
+    .contact{
+        flex-direction: column-reverse;
+        .contact-form{
+            width: 100%;
+        }
+        .contact-othes{
+            width: 100%;
+        }
+    }
+}

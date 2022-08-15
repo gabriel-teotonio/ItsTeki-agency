@@ -1,0 +1,102 @@
+@import '../config/variables';
+@import '../config/reset';
+
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    border-bottom: 1px solid rgba(27, 16, 190, 0.379);
+    a{
+        text-decoration: none;
+    }
+    .logo-header{
+        font-size: 2rem;
+        font-weight: 700;
+        @include logo-gradient();
+        &:hover{
+            color: white !important;
+        }
+    }
+    .btn-back{
+        color: aliceblue;
+        font-size: 2rem;
+    }
+}
+
+
+main{
+    display: flex;
+    padding: 1rem;
+    p{
+        color: lightgray;
+    }
+    article{
+        width: 50%;
+    }
+    .main-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     text-align: center;
+     gap: 1rem;
+     h1{
+        font-size: 3rem;
+        font-weight: 700;
+     }
+     i{
+        font-size: 4rem;
+        color: rgb(16, 223, 61);
+     }
+     img{
+        width: 20rem;
+     }
+    }
+
+    .main-form{
+        background-color: rgba(25, 25, 148, 0.233);
+        padding: 1rem;
+        border-radius: 1rem;
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            font-weight: 600;
+
+            .form-control{
+                background-color: var(--bg-color);
+                border: none;
+                color: white;
+                font-weight: 600;
+            }
+            textarea{
+                margin-top: .5rem;
+            }
+        }
+    }
+}
+
+
+.modal{
+    color: black;
+}
+
+
+
+
+@media (max-width:720px){
+    main{
+        flex-direction: column;
+        gap: 4rem;
+        article{
+            width: 100%;
+        }
+        .main-text{
+            img{
+                display: none;
+            }
+        }
+    }
+}

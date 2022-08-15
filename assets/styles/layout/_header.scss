@@ -1,0 +1,80 @@
+@import '../config/variables';
+
+
+.menu-fixo{
+    position: fixed;
+    background:#061e4d93;
+    backdrop-filter: blur(.5rem);
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    nav{
+        font-size: 1.3rem !important;
+        .header-nav{
+            width: 100%;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbar-brand{
+            font-size: 2rem;
+            font-weight: 700;
+            @include logo-gradient();
+            &:hover{
+                color: white !important;
+            }
+        }
+        .nav-link{
+            color: white !important;
+            &:hover{
+                color: #b9d0ff !important;
+            }
+            &:active{
+                color: #2554b4;
+            }
+        }
+        .navbar-toggler{
+            font-size: 1.7rem;
+            &:focus{
+                box-shadow: 0 0 0 .25rem rgba(0, 0, 255, 0.456) !important;
+            }
+            span{
+                color: white;
+            }
+        }
+        .navbar-collapse{
+            padding: 0 1rem;
+           .box-btn-nav{
+            .btn{
+                width: 12rem;
+                background-color: transparent;
+                border: 1px solid var(--color-primary);
+                &:hover{
+                    background-color: #2555b42e;
+                }
+            }
+           }
+        }
+    }
+
+}
+
+@media(max-width:991px){
+    header{
+        nav{
+            .navbar-collapse{
+                background-color: #2554b4;
+                margin-top: 1rem;
+                .box-btn-nav{
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    margin: 1rem;
+                   }
+            }
+        }
+    }
+}

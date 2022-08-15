@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/styles/page-orcamento/main.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js" defer></script>
+    <!-- js -->
+    <script src="https://kit.fontawesome.com/d7a19c72cc.js" crossorigin="anonymous"></script>
+    <script src="assets/js/orcamente.js" defer></script>
+    <!-- sweet alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <a class="navbar-brand logo-header" href="#"><p>ItsTeki</p></a>
+        <a class="btn-back" type="button" role="button" href="index.html"><i class="fa-solid fa-house"></i></a>
+    </header>
+    <main>
+        <article class="main-text">
+            <h1>Solicite seu orçamento</h1>
+            <!-- <img src="images/Ilustration-orcament.svg" alt="boneco segurando caderno"> -->
+            <p>ou fale diretamente com um atendente</p>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </article>
+
+        <article class="main-form"> 
+            <form>
+                <div class="row mb-3">
+                  <label for="inputName" class="col-sm-2 col-form-label">Nome</label>
+                  <div class="col-sm-10">
+                    <input required type="text" class="form-control" id="inputName">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input required type="email" class="form-control" id="inputEmail3">
+                    </div>
+                  </div>
+                <fieldset class="row mb-3">
+                  <legend class="col-form-label col-sm-2 pt-0">Meu site será </legend>
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <input required class="form-check-input" type="radio" name="gridRadios" id="radioLandingPage" value="landingPage">
+                      <label class="form-check-label" for="radioLandingPage">
+                        Uma Landing Page
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input required class="form-check-input" type="radio" name="gridRadios" id="radioInstitucional" value="institucional">
+                      <label class="form-check-label" for="radioInstitucional">
+                            Institucional
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input required class="form-check-input" type="radio" name="gridRadios" id="radioEcommerce" value="ecommerce">
+                      <label class="form-check-label" for="radioEcommerce">
+                        E-commerce
+                      </label>
+                    </div>
+                  </div>
+
+                </fieldset>
+                <fieldset class="row mb-3">
+                  <legend class="col-form-label col-sm-2 pt-0">Meu site terá</legend>
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <input required class="form-check-input" type="radio" name="gridRadiosPages" id="pages1" value="1Pagina">
+                      <label class="form-check-label" for="pages1">
+                        1 Página
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input required class="form-check-input" type="radio" name="gridRadiosPages" id="pages2" value="2Pagina">
+                      <label class="form-check-label" for="pages2">
+                        2 Páginas
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input required class="form-check-input" type="radio" name="gridRadiosPages" id="pages3" value="+3Pagina">
+                      <label class="form-check-label" for="pages3">
+                        +3 Páginas
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+                <div class="form">
+                    <label for="floatingTextarea2">Especificações do site</label>
+                    <textarea minlength="7" required class="form-control" placeholder="Detalhes da sua ideia" id="floatingTextarea2" style="height: 100px"></textarea>
+                  </div>
+                <button type="submit" class="btn btn-primary" >Enviar</button>
+              </form>
+        </article>
+    </main>
+  
+</body>
+</html>

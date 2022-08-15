@@ -1,0 +1,51 @@
+
+@import '../config/variables';
+
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    padding-bottom: 0;
+    gap: 2rem;
+    .footer-itens{
+        display: flex;
+        width: 100%;
+        align-items: center;    
+        div{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            a{
+                width: fit-content;
+            }
+            h3{
+                font-weight: 700;
+            }
+        }
+    }
+    .logo{
+        width: fit-content;
+            text-decoration: none;
+            p{
+                @include logo-gradient();
+                font-size: 3rem;
+                font-weight: 700;
+            }
+    }
+    .footer-bottom{
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid rgba(0, 0, 255, 0.249);
+        padding: 1rem;
+    }
+}
+
+
+@media(max-width:560px){
+    footer{
+        .footer-itens{
+            flex-direction: column;
+            gap: 2rem;
+        }
+    }
+}

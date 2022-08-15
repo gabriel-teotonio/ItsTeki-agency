@@ -1,0 +1,39 @@
+
+
+.questions{
+    text-align: center;
+    padding: 4rem 0;
+    .accordion{
+        width: 80%;
+        margin: 2rem auto;
+        text-align: left;
+        .accordion-item{
+            background-color: rgba(31, 77, 177, 0.568);
+            border: 1px solid rgba(43, 74, 184, 0.33) !important;
+        }
+        .accordion-button{
+            background-color: rgba(31, 77, 177, 0.568);
+            border: none !important;
+            box-shadow: none !important;
+            color: white !important;
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+        .accordion-body{
+            color: lightgray !important;
+            font-weight: 600;
+        }
+    }
+}
+
+
+
+@media (max-width:420px){
+    .questions{
+        .accordion{
+            .accordion-button{
+                font-size: 1rem;
+            }
+        }
+    }
+}
