@@ -210,7 +210,7 @@ header nav .navbar-collapse .box-btn-nav .btn:hover {
   max-width: 30rem;
   margin: 0 auto;
 }
-.home .home-content .btn {
+.home .home-content button {
   width: 18rem;
   margin: 1rem auto;
 }
